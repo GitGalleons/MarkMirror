@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Editor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 editor-section">
+                <div class="toolbar">
+                    <button class="btn btn-light btn-sm" id="bold-btn" title="Bold"><b>B</b></button>
+                    <button class="btn btn-light btn-sm" id="italic-btn" title="Italic"><i>I</i></button>
+                    <button class="btn btn-light btn-sm" id="heading-btn" title="Heading">H1</button>
+                    <button class="btn btn-light btn-sm" id="list-btn" title="List">List</button>
+                    <button class="btn btn-light btn-sm" id="link-btn" title="Link">Link</button>
+                    <button class="btn btn-light btn-sm" id="undo-btn" title="Undo">Undo</button>
+                    <button class="btn btn-light btn-sm" id="redo-btn" title="Redo">Redo</button>
+                    <button class="btn btn-light btn-sm" id="spellcheck-btn" title="Spellcheck">Spellcheck</button>
+                    <button class="btn btn-light btn-sm" id="toggle-preview-btn" title="Toggle Preview">Preview</button>
+                    <button class="btn btn-primary btn-sm" id="download-md">Download as .md</button>
+                    <button class="btn btn-secondary btn-sm" id="download-html">Download as .html</button>
+                </div>
+                <textarea id="markdown-input" class="form-control"></textarea>
+            </div>
+            <div class="col-md-6 preview-section">
+                <div id="live-preview" class="preview"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
